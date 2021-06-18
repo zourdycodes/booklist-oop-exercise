@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bfe5e8d147d21d1a47960843ef118be8">
+
+    <script defer="" src="e4497704b8aeec6c45dfc629145268a3" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer="" src="fcd49a4aafd884d0934a4f2aa06875d2"></script>
+
+    <title>Booklist: listing your read list!</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>list
+      </h1>
+
+      <form id="book-form"></form>
+    </div>
+  </body>
+</html>
