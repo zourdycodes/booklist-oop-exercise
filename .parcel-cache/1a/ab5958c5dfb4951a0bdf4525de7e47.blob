@@ -1,0 +1,41 @@
+//todo: Book Class ==> Represents a book
+class Book {
+  constructor(title, author, isbn) {
+    this.title = title;
+    this.author = author;
+    this.isbn = isbn;
+  }
+}
+
+//todo: UI Class ==> Handle UI Class
+class UI {
+  static displayBooks() {
+    const storedBooks = [
+      {
+        title: "Book One",
+        author: "John Doe",
+        isbn: "324241245",
+      },
+      {
+        title: "Book Tw0",
+        author: "Jane Doe",
+        isbn: "32900145",
+      },
+    ];
+
+    storedBooks.forEach((book) => this.addBookToList(book));
+  }
+
+  addBookToList(book) {
+    console.log("done");
+  }
+}
+
+//todo: Store Class ==> Handles Storage
+class Storage {}
+
+//todo: Event ==> Display Books
+
+//todo: Event ==> Add a book
+
+//todo: Event ==> Remove a book

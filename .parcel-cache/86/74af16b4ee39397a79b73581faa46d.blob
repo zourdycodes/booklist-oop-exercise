@@ -1,0 +1,56 @@
+//todo: Book Class ==> Represents a book
+class Book {
+  constructor(title, author, isbn) {
+    this.title = title;
+    this.author = author;
+    this.isbn = isbn;
+  }
+}
+
+//todo: UI Class ==> Handle UI Class
+class UI {
+  displayBooks() {
+    const storedBooks = [
+      {
+        title: "Book One",
+        author: "John Doe",
+        isbn: "324241245",
+      },
+      {
+        title: "Book Tw0",
+        author: "Jane Doe",
+        isbn: "32900145",
+      },
+    ];
+
+    //warn
+    storedBooks.forEach((book) => this.addBookToList(book));
+  }
+
+  addBookToList(book) {
+    const list = document.querySelector("#book-list");
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+    <td>${book.title}</td>
+    <td>${book.author}</td>
+    <td>${book.isbn}</td>
+    <td><a href="#"><button class="btn-danger btn-sm delete">X</button></td>
+    `;
+
+    list.appendChild(row);
+  }
+}
+
+//todo: Store Class ==> Handles Storage
+class Storage {}
+
+const book = new UI();
+
+//todo: Event ==> Display Books
+
+// document.addEventListener("DOMContentLoaded", UI.displayBooks);
+
+//todo: Event ==> Add a book
+
+//todo: Event ==> Remove a book

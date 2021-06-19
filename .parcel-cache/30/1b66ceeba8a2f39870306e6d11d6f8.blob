@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bfe5e8d147d21d1a47960843ef118be8">
+
+    <script defer="" src="e4497704b8aeec6c45dfc629145268a3" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer="" src="fcd49a4aafd884d0934a4f2aa06875d2"></script>
+
+    <title>Booklist: listing your read list!</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Book</span>list
+      </h1>
+
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary btn-block mt-4 w-100" value="add book">
+      </form>
+
+      <table class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
